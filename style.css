@@ -1,0 +1,147 @@
+/* PRINCIPALES */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2E2E2E;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.container {
+    margin: 0 70px 0 70px;
+}
+
+/* NAV */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 2px solid #FAFAFA1A;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.nav-list {
+    display: flex;
+
+    list-style-type: none; 
+    width: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #FAFAFA;
+    font-weight: 400;
+    font-family: Poppins;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
+
+/* FIRST SECTION */
+
+.first-section {
+    display: flex;
+    margin-top: 56px;
+    justify-content: space-between;
+    width: 1300px;
+}
+
+.div-h1{
+    display: flex;
+    flex-direction: column;
+    width: 556px;
+    height: 136px;    
+    align-items: self-start;
+}
+
+h1{
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.h1-span {
+    color: #818181;
+}
+
+.icon{
+    height: 80px;
+    width: auto;
+    
+}
+
+.div-p-section {
+    width: 400px;
+    height: auto;
+    margin-right: 200px;
+}
+
+.p-section{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 1px;
+    color: #FAFAFACC;
+    margin-top: 10px;
+}
+
+.contacto {
+    margin-top: 30px;
+    display: flex;
+    align-items: end;
+}
+
+.contact-button {
+    width: 141px;
+    height: 32px;
+    border: 1px solid #FFFFFF4D;
+    background-color: #282828;
+    border-radius: 60px;
+    margin-left: 20px;
+}
+
+/* IMAGEN LANDING */
+
+.contenedor-img{
+    width: 1000px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.img-landing {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-left: -44px;
+}
+
+/* OBRAS TERMINADAS */
+/* TITULO */
+
+.h1-terminadas {
+    margin-top: 56px;
+}
+
+/* CARDS */
+
+.card {
+    display: flex;
+    background-color: #FAFAFA;
+    width: 1110px;
+    height: 524px;
+    border-radius: 16px;
+    margin-top: 20px;
+}
