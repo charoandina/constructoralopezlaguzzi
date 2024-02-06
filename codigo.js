@@ -8,7 +8,7 @@ const obrasTerminadasArray = [
       pisos: "15",
       cocheras: "23",
       unidades: "1 - 2 - 3 ambientes",
-      imagen: "img/ed-triunvirato.jpeg"
+      imagen: "../img/ed-triunvirato.jpeg"
     },
     {
       direccion: "Calle 123",
@@ -17,14 +17,14 @@ const obrasTerminadasArray = [
       pisos: "12",
       cocheras: "20",
       unidades: "2 - 3 ambientes",
-      imagen: "img/segurola.jpeg"
+      imagen: '../img/segurola.jpeg'
     },
   ];
 
   // Obtener el contenedor de las cards
   const cardsContainer = document.getElementById('cards-container');
 
-  // Crear las cards con los diferentes conjuntos de datos
+  // Crear las cards con los diferentes datos
   obrasTerminadasArray.forEach(obrasTerminadas => {
     const card = document.createElement('div');
     card.className = 'card container';
@@ -32,15 +32,16 @@ const obrasTerminadasArray = [
     // Agregar contenido dinámicamente
     card.innerHTML = `
       <div>
-      <img src="${obrasTerminadas.imagen}" alt="${obrasTerminadas.direccion}">
+      <img src="${obrasTerminadas.imagen}" alt="${obrasTerminadas.direccion}" class="img-cards">
       </div>
-      <div>
+      <div class="cards-info">
       <h2>${obrasTerminadas.direccion}</h2>
-      <p><strong>Inicio:</strong> ${obrasTerminadas.inicio}</p>
-      <p><strong>Superficie:</strong> ${obrasTerminadas.superficie}</p>
-      <p><strong>Pisos:</strong> ${obrasTerminadas.pisos}</p>
-      <p><strong>Cocheras:</strong> ${obrasTerminadas.cocheras}</p>
-      <p><strong>Unidades:</strong> ${obrasTerminadas.unidades}</p>
+      <p>Inicio: ${obrasTerminadas.inicio}</p>
+      <p>Superficie: ${obrasTerminadas.superficie}</p>
+      <p>Pisos: ${obrasTerminadas.pisos}</p>
+      <p>Cocheras: ${obrasTerminadas.cocheras}</p>
+      <p>Unidades: ${obrasTerminadas.unidades}</p>
+      <a href="#" class="a-card">Más información</a>
       </div>
     `;
 

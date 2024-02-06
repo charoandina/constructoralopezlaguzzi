@@ -23,14 +23,13 @@ body {
     border-bottom: 2px solid #FAFAFA1A;
 }
 
-img {
+.logo {
     width: 200px;
     height: auto;
 }
 
 .nav-list {
     display: flex;
-
     list-style-type: none; 
     width: 600px;
     justify-content: space-around;
@@ -137,6 +136,13 @@ h1{
 
 /* CARDS */
 
+.cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 56px;
+}
+
 .card {
     display: flex;
     background-color: #FAFAFA;
@@ -144,4 +150,36 @@ h1{
     height: 524px;
     border-radius: 16px;
     margin-top: 20px;
+    align-items: center;
+}
+
+.cards-info {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 1px;
+    margin-left: 40px;
+}
+
+h2{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 58px;
+    letter-spacing: 1px;
+}
+
+.img-cards{
+    width: 349px;
+    height: 524px;
+    border-radius: 16px 0px 0px 16px;
+    margin-top: 6px;
+}
+
+.a-card {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #000000;
 }
