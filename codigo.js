@@ -8,7 +8,9 @@ const obrasTerminadasArray = [
       pisos: "15",
       cocheras: "23",
       unidades: "1 - 2 - 3 ambientes",
-      imagen: "../img/ed-triunvirato.jpeg"
+      imagen: "../img/desaguadero4147.jpg",
+      id: 1,
+      detalles: "../detalles-obras/desaguadero.html"
     },
     {
       direccion: "Calle 123",
@@ -23,6 +25,11 @@ const obrasTerminadasArray = [
 
   // Obtener el contenedor de las cards
   const cardsContainer = document.getElementById('cards-container');
+
+  // Manejador de clic en el enlace "Más información"
+  function redirectToDetailsPage(id) {
+      window.location.href = `detalles.html?id=${id}`;
+  }
 
   // Crear las cards con los diferentes datos
   obrasTerminadasArray.forEach(obrasTerminadas => {
@@ -41,8 +48,7 @@ const obrasTerminadasArray = [
       <p>Pisos: ${obrasTerminadas.pisos}</p>
       <p>Cocheras: ${obrasTerminadas.cocheras}</p>
       <p>Unidades: ${obrasTerminadas.unidades}</p>
-      <a href="#" class="a-card">Más información</a>
-      </div>
+      <a href="#" class="a-card" onclick="redirectToDetailsPage('${obrasTerminadas.id}')">Más información <img src="../img/arrow.png" alt="flecha mas informacion" class="flecha"></a>      </div>
     `;
 
     // Agregar la card al contenedor
